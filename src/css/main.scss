@@ -27,6 +27,8 @@ h3 {
 
 section {
     @extend .section;
+    @extend .container;
+    max-width: 40em;
 }
 
 code {
@@ -199,11 +201,13 @@ div p {
     width: 29%;
 }
 
+/*
 @include tablet {
     .taglist {
         grid-template-columns: repeat(8, minmax(100px, 1fr));
     }
 }
+*/
 
 hr {
     margin-top: 1.5em;
