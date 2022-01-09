@@ -44,6 +44,12 @@ code::before {
 code::after {
     content: '>';
 }
+code.attr::before {
+    content: ''
+}
+code.attr::after {
+    content: '='
+}
 
 div p {
     margin-bottom: 1em;
@@ -143,7 +149,22 @@ div p {
 }
 
 .commentary ul {
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
+}
+.commentary h3:not(:last-child) {
+    margin-bottom: 0.5em;
+}
+
+.commentary details summary {
+    margin-bottom: 0.3em;
+}
+
+.actual-list {
+    list-style: disc;
+    list-style-position: inside;
+}
+.actual-list li:not(:last-child) {
+    margin-bottom: 0.2em;
 }
 
 .final4 code {
@@ -199,4 +220,9 @@ hr {
 
 hr::after {
     content: '>';
+}
+
+footer {
+    text-align: center;
+    margin-bottom: 1em;
 }

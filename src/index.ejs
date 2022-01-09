@@ -339,6 +339,8 @@
         <div class="tournament-round">
             <h2><a href="https://twitter.com/seldo/status/1460345542580400131">Round 2</a></h2>
 
+            <p>Less chaotic than round 1, less brutal than round 3, round 2 was a temporary calm before the storm.</p>
+
             <%- include('_includes/round', {scores: scores, round: 2, size: 'small'}); %>
         </div>
 
@@ -346,12 +348,200 @@
 
         <div class="commentary">
             <h2>Round 2 exits</h2>
+
+            <p>Interesting that related tags often leave in the same round -- <code>dt</code> and <code>dd</code>, the <code>ruby</code> trio, <code>sub</code> and <code>sup</code>, <code>del</code> and <code>ins</code> went in round 1, but <code>fieldset</code> and <code>legend</code> both made it to round 2 and then got eliminated at the same time, as did all the <code>h*</code> tags, and <code>em</code> and <code>strong</code>.</p>
+
+            <h3>Block: 50% eliminated</h3>
+
+            <ul>
+                <li>
+                    <details>
+                        <summary><code>blockquote</code></summary>
+                        <p>An oldie and a goodie, <code>blockquote</code> was up against <code>style</code> and <code>head</code> in game 3 and there's no shame losing to those heavyweights.</p>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary><code>dl</code></summary>
+                        <p>Since <code>dt</code> and <code>dd</code> were eliminated in round 1, the writing was on the wall for <code>dl</code>, but I was glad to see people appreciated its value enough to get past round 1. It lost game 7 to <code>script</code> and <code>marquee</code>, both of whom went very far indeed.</p>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary><code>main</code></summary>
+                        <p>Look, nobody gives a shit about <code>main</code>. I have no idea how it managed to beat <code>iframe</code> in round 1.</p>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary><code>menu</code></summary>
+                        <p>A cute little semantic tag, <code>menu</code> was never going to be a finalist, and it drew <code>ul</code> and <code>table</code> in game 11.</p>
+                    </details>
+                </li>
+            </ul>
+
+            <h3>Embeds: 66% eliminated</h3>
+
+            <p>It was another tough round for the unloved embed category.</p>
+
+            <ul>
+                <li>
+                    <details>
+                        <summary><code>audio</code></summary>
+                        <p>Where would podcasts be without the stalwart <code>audio</code> tag? We're going to find out, because we just got rid of it.</p>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary><code>picture</code></summary>
+                        <p>Complex but powerful, picture lets you load images that look good on any device at the cost of a great deal of tedious markup. Your favorite framework's image-optimization feature probably uses this tag, but actual humans are probably just using <code>img</code>.</p>
+                    </details>
+                </li>
+            </ul>
+
+            <h3>Forms: 25% eliminated</h3>
+
+            <p>After a tough round 1, the remaining tags in the Forms category were pretty strong in round 2.</p>
+
+            <ul>
+                <li>
+                    <details>
+                        <summary><code>fieldset</code> & <code>legend</code></summary>
+                        <p>Clever but only occasionally useful, if your form is so complicated that you need <code>fieldset</code>, you're probably doing something wrong. With it goes <code>legend</code>, which even people who use <code>fieldset</code> seldom use.</p>
+                    </details>
+                </li>
+            </ul>
+
+            <h3>Scripting: 33% eliminated</h3>
+
+            <p>Given that the only tag eliminated in the scripting category was <code>noscript</code>, I think it's arguable to say that no actual scripting tags were eliminated, presaging the strength of web app voters in later rounds.</p>
+
+            <ul>
+                <li>
+                    <details>
+                        <summary><code>noscript</code></summary>
+                        <p>No chance.</p>
+                    </details>
+                </li>        
+            </ul>
+
+            <h3>Sections: 58% eliminated</h3>
+
+            <p>Almost no section tags got eliminated in round 1, but round 2 was a real winnower for this category.</p>
+
+            <ul>
+                <li>
+                    <details>
+                        <summary><code>address</code></summary>
+                        <p>Honestly kind of weird that the spec considers this a section rather than a block or a text element, but what do I know? Confidently semantic, address was too pure for this world.</p>
+                    </details>
+                </li>        
+                <li>
+                    <details>
+                        <summary><code>aside</code></summary>
+                        <p>A delightfully semantic tag, game 12 had it up against <code>span</code> and <code>title</code> and that's a tough game.</p>
+                    </details>
+                </li>        
+                <li>
+                    <details>
+                        <summary><code>h1</code>, <code>h2</code>, <code>h5</code>, <code>h6</code> and <code>hgroup</code></summary>
+                        <p><code>h3</code> and <code>h4</code> were unlucky in round 1 but round 2 decided none of the header tags were essential, not even <code>h1</code>, which lost to <code>div</code> (obviously) and <code>section</code> (surprisingly) in game 5.</p>
+                    </details>
+                </li>
+            </ul>
+
+            <h3>Tables: 66% eliminated</h3>
+
+            <p>Round 2 saw the exits of <code>table</code>'s remaining child tags, leaving it non-functional but a symbolic standard-bearer for at least one more round.</p>
+
+            <ul>
+                <li>
+                    <details>
+                        <summary><code>tbody</code></summary>
+                        <p>If nobody's using <code>thead</code> and <code>tfoot</code>, nobody's using <code>tbody</code>. It only survived because game 7 in round 1 was a very weak match.</p>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary><code>th</code></summary>
+                        <p>With <code>th</code> eliminated, <code>table</code> was the last tag standing in the category.</p>
+                    </details>
+                </li>                
+            </ul>
+
+            <h3>Text: 78% eliminated</h3>
+
+            <p>Text tags were once again the weakest category in round 2, with nearly 4 in 5 tags kicked out this round.</p>
+
+            <ul>
+                <li>
+                    <details>
+                        <summary><code>abbr</code></summary>
+                        <p>Old, solidly semantic but ultimately somewhat unloved, we say goodbye to <code>abbr</code>.</p>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary><code>b</code></summary>
+                        <p>Like <code>i</code> and <code>u</code>, the tag formerly known as Bold has been retroactively given a new name and a semantic purpose, it is now the comically try-hard <dfn>Bring Attention To</dfn> element which, very luckily, means it renders as bold in most browsers. It lost game 11 to <code>ul</code> and <code>table</code>, which seems fair.</p>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary><code>br</code></summary>
+                        <p>The line break element is still called the line break element, unlike similar older tags which have been renamed. A convenient, get-it-done tool in any developer's toolset, it lost game 9 to <code>button</code> and <code>label</code>, a sign of things to come.</p>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary><code>cite</code></summary>
+                        <p>A throwback to the early academic origins of HTML, when Tim expected most people would be writing scientific papers and would need to cite each other all the time, this tag still gets a lot of use because people really <strong>do</strong> cite papers online all the time, in addition to everything else we now use the web for.</p>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary><code>em</code> & <code>strong</code></summary>
+                        <p>The semantic replacements for <code>i</code> and <code>b</code> that never fully replaced either, nobody's too broken up about seeing these go.</p>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary><code>time</code></summary>
+                        <p>An adorable, pure-hearted little semantic tag, it was up against <code>select</code> and <code>header</code> in game 13, so it was time to go.</p>
+                    </details>
+                </li>
+            </ul>
+
+            <h3>Randos</h3>
+
+            <ul>
+                <li>
+                    <details>
+                        <summary><code>details</code></summary>
+                        <p>If you've looked at the markup of this site you'll know I'm a big fan of <code>details</code>, but sadly the public was not swayed.</p>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary><code>dialog</code></summary>
+                        <p>A stylable equivalent to the much-maligned JavaScript <code>alert()</code> box, <code>dialog</code> is not supported in the current version of Firefox and Safari is still working on it. I imagine there's an entertaining debate going on inside Mozilla about why they shouldn't support making modals.</p>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary><code>area</code></summary>
+                        <p><code>area</code> only survived to round 2 by drawing extremely weak opponents in round 1, and with <code>map</code> already eliminated there was no chance for it.</p>
+                    </details>
+                </li>                        
+            </ul>
         </div>
 
         <hr>
 
         <div class="tournament-round">
             <h2><a href="https://twitter.com/seldo/status/1460708012482465792">Round 3</a></h2>
+
+            <p>In round 2 it was sad to see some tags go, but round 3 was where things got truly brutal.</p>
 
             <%- include('_includes/round', {scores: scores, round: 3, size: 'small'}); %>
         </div>
@@ -360,12 +550,72 @@
 
         <div class="commentary">
             <h2>Round 3 exits</h2>
+
+            <p>Only 12 tags exited in round 3, so I'm not comparing by category any more, we'll go tag by tag.</p>
+
+            <ul>
+                <li>
+                    <details open>
+                        <summary><code>li</code> & <code>ul</code></summary>
+                        <p>They made it to round 3, but lists are gone. In this new pared-down HTML you're gonna have to add bullets to divs.</p>
+                    </details>
+                </li>
+                <li>
+                    <details open>
+                        <summary><code>label</code></summary>
+                        <p>Accessibility breathes its last as the final tag that attempts to help non-visual browsers falls in game 2 to <code>img</code> and <code>html</code>.</p>
+                    </details>
+                </li>
+                <li>
+                    <details open>
+                        <summary><code>select</code> & <code>option</code></summary>
+                        <p>You want a drop-down menu? Fuck you. Build it in JavaScript.</p>
+                    </details>
+                </li>
+                <li>
+                    <details open>
+                        <summary><code>head</code>, <code>title</code> & <code>meta</code></summary>
+                        <p>All the remaining meta tags fell out in the same round, each in different games. This version of HTML is not for search engines either.</p>
+                    </details>
+                </li>
+                <li>
+                    <details open>
+                        <summary><code>header</code> & <code>footer</code></summary>
+                        <p>Continuing the pattern of paired elements exiting simultaneously, these semantic stalwarts exited in games 6 and 7.</p>
+                    </details>
+                </li>
+                <li>
+                    <details open>
+                        <summary><code>section</code></summary>
+                        <p>It outlasted many of its confusingly-similar peers, but no more sections for you. Only divs!</p>
+                    </details>
+                </li>
+                <li>
+                    <details open>
+                        <summary><code>code</code></summary>
+                        <p>The second-to-last semantic tag is out of the tournament, losing to <code>body</code> and <code>script</code> in game 4, but <code>code</code> is the MVP of this particular website; every single tag is a <code>code</code> tag.</p>
+                    </details>
+                </li>
+            </ul>
         </div>
 
         <hr>
 
         <div class="tournament-round">
             <h2><a href="https://twitter.com/seldo/status/1461066159613042688">Round 4</a></h2>
+
+            <p>The tags that survived to round 4 showed some clear trends:
+                <ul class="actual-list">
+                    <li>a desire for web app functionality over anything else. The remaining tags can make a solid web app, but without lists, and <code>table</code> having no child elements, you'd be hard pressed to mark up any kind of document.</li>
+                    <li>nobody cares about marking up inline text semantically, all of those tags are gone</li>
+                    <li>in fact nearly all purely semantic tags are gone; <code>nav</code> is the last tag standing</li>
+                    <li>all pretense of accessibility is gone with <code>label</code> the last to go</li>
+                    <li>we don't care about discoverability; all the meta tags are out including <code>meta</code> itself</li>
+                    <li>external stylesheets are gone; you have to use <code>style</code>, another warning sign for CSS as we continue to strip features from the language.</li>
+                </ul>
+            </p>
+            <p><code>span</code> and <code>form</code> lost their games in round 3, but to make it an even 4 tags per round they got promoted to round 4 on the basis of being the highest-scored of the losing tags.</p>
+            <p>Also clear by this point was the groundswell of fan support for <code>marquee</code>, with dozens of people drawing attention to the tournament specifically to vote for it.</p>
 
             <%- include('_includes/round', {scores: scores, round: 4, size: 'big'}); %>
         </div>
@@ -374,12 +624,67 @@
 
         <div class="commentary">
             <h2>Round 4 exits</h2>
+
+            <ul>
+                <li>
+                    <details open>
+                        <summary><code>p</code></summary>
+                        <p><code>p</code> barely counts as a semantic tag but it was still too semantic for the brutal, bare-bones HTML of round 5, so away it goes.</p>
+                    </details>
+                </li>
+                <li>
+                    <details open>
+                        <summary><code>form</code></summary>
+                        <p><code>form</code> losing to <code>input</code> makes it impossible to submit a form using HTML, but still lets you build forms in JavaScript, like in React, and the preferences of JavaScripters are definitely making themselves felt now.</p>
+                    </details>
+                </li>
+                <li>
+                    <details open>
+                        <summary><code>style</code></summary>
+                        <p>Another tragedy. Now if you want to style stuff you're going to have to do it using <code class="attr">style</code> attributes. Not coincidentally, adding style via attributes is another React idiom.</p>
+                    </details>
+                </li>
+                <li>
+                    <details open>
+                        <summary><code>html</code></summary>
+                        <p>How <strong>dare</strong> you. As everyone points out, the <code>html</code> tag is superfluous, because it's always implied if you leave it out. But still! It's the spiritual root of the whole thing!</p>
+                    </details>
+                </li>
+                <li>
+                    <details open>
+                        <summary><code>body</code></summary>
+                        <p>With <code>html</code> already gone, it was clear <code>body</code>, another implied tag, wasn't going to make it through this round.</p>
+                    </details>
+                </li>
+                <li>
+                    <details open>
+                        <summary><code>nav</code></summary>
+                        <p>The very last semantic tag is gone. It's just pure functionality now.</p>
+                    </details>
+                </li>
+                <li>
+                    <details open>
+                        <summary><code>table</code></summary>
+                        <p>Long rendered useless by the absence of all its child tags, table takes its final bow.</p>
+                    </details>
+                </li>
+                <li>
+                    <details open>
+                        <summary><code>span</code></summary>
+                        <p>Not only did <code>span</code> lose to <code>div</code>, it came dead last in game 1. An ignominous fate.</p>
+                    </details>
+                <li>
+            </ul>
         </div>
 
         <hr>
-        
+
         <div class="tournament-round">
             <h2><a href="https://twitter.com/seldo/status/1461428057550430214">Round 5</a></h2>
+
+            <p>The version of HTML presented by round 5 reveals some uncomfortable truths about ourselves as developers. We threw out accessibility, semantic markup, discoverability, even style sheets. The remaining tags can build a web app -- you've still got <code>canvas</code>, so quite a fancy web app -- sure, but at what cost? And why the fuck is <code>marquee</code> still here?</p>
+
+            <p>Throwing away half of these tags is going to be a nightmare.</p>
 
             <%- include('_includes/round', {scores: scores, round: 5, size: 'big'}); %>
         </div>
@@ -388,12 +693,43 @@
 
         <div class="commentary">
             <h2>Round 5 exits</h2>
+
+            <ul>
+                <li>
+                    <details open>
+                        <summary><code>img</code></summary>
+                        <p>The grand-daddy of the commercial web, the image tag, has been cruelly dispatched. Sure, you can bring in images using style attributes on a <code>div</code>, but where's the dignity?</p>
+                    </details>
+                </li>        
+                <li>
+                    <details open>
+                        <summary><code>button</code> & <code>input</code></summary>
+                        <p>The final form elements bite the dust. Good luck capturing any user input, motherfuckers.</p>
+                    </details>
+                </li>        
+                <li>
+                    <details open>
+                        <summary><code>canvas</code></summary>
+                        <p>The powerful, flexible canvas, its own weird universe of APIs, has a ton of fans, as evidenced by it sticking it out all the way until now. But it didn't make the final 4.</p>
+                    </details>
+                </li>                                
+            </ul>
         </div>
 
         <hr>
 
         <div class="tournament-round">
             <h2><a href="https://twitter.com/seldo/status/1461787400070438914">Final 4</a></h2>
+
+            <p>This version of HTML is a nightmare. To do anything vaguely useful you have to resort to horrible hacks, and of course, because web developers are who we are, that's what people started doing at this point in the competition:
+                <ul class="actual-list">
+                    <li>Félix started it by <a href="https://twitter.com/passcod/status/1461984560640454658">building a clock using only the script tag</a></li>
+                    <li>Jamie took this one step further, showing you could use script tags, and <b>only</b> script tags, <a href="https://twitter.com/buildsghost/status/1461797915828047872">to capture user input</a>.</li>
+                    <li>Not to be outdone, Alex built <a href="https://twitter.com/alexwlchan/status/1462010718576910340">a functional spaceship game using only the marquee tag</a>, truly an abomination, yet very impressive.</li>
+                </ul>
+            </p>
+
+            <p>The final 4 had been predicted 3 rounds earlier by <a href="https://twitter.com/citizen_of_now/status/1461977081080913924">Howard</a>, and his reward was a donation in his name to <a href="https://codebar.io/">Codebar</a>, which he matched with his own funds, because he's a good sport.</p>
 
             <dl class="match final4">
                 <dd class="first">
@@ -419,12 +755,35 @@
 
         <div class="commentary">
             <h2>Final 4 exits</h2>
+
+            <ul>
+                <li>
+                    <details open>
+                        <summary><code>div</code></summary>
+                        <p>The mighty have fallen! A lot of people were worried (or gleeful) that <code>div</code> was gonna take the whole tournament, but it was not to be, primarily because of the by-now unstoppable force of meme voters piling on to <code>marquee</code>, <a href="https://twitter.com/tsunamino/status/1460754397055488003">especially</a> <a href="https://twitter.com/tsunamino/status/1461116066113880064">Danielle</a> <a href="https://twitter.com/tsunamino/status/1461429962708193280">Leong</a></p>
+                    </details>
+                </li>        
+                <li>
+                    <details open>
+                        <summary><code>script</code></summary>
+                        <p>You'd think the ejection of <code>script</code> would mean the end of JavaScript shenanigans, but Alex's <a href="http://marquee-rocket.glitch.me/">all-marquee rocket ship</a> disproves that.</p>
+                    </details>
+                </li>                        
+            </ul>
         </div>
 
         <hr>
 
         <div class="tournament-round">
             <h2><a href="https://twitter.com/seldo/status/1462149025633746951">Championship</a></h2>
+
+            <p>It all came down to a choice, emblamatic of the times we live in.</p>
+
+            <p>In one corner, the a tag. The H in HTML and HTTP, the basis of web 1.0, the thing that makes the web a web. A semantic tag of unmatched simplicity, purity and power, it says "the words in this tag are related to this URL". That relationship <em>is</em> the web.</p>
+                
+            <p>In the other corner, marquee, a useless remnant of the browser wars of the 90s, propelled to the final round through a combination of nostalgia for a simpler time and simply for the lulz.</p>
+                
+            <p>Would reality win over memes? It was a very 2021 question.</p>
 
             <dl class="match championship">
                 <dd class="first">
@@ -441,10 +800,18 @@
         <hr>
 
         <div class="commentary">
-            <h2>Championship exit</h2>
+            <h2>The winner: <code>a</code></h2>
+
+            <p>And that was it. After 57 polls, 7 rounds, and over 76,000 votes cast, we had our champion. To my enormous relief, <code>a</code> was our victor. It's just not a web without it.</p>
+
+            <p>Thanks to everyone who voted, this competition was enormous fun.</p>
         </div>
 
     </section>
-        
+
+    <footer>
+        <small>Copyright &copy; 2021-2022 <a href="https://twitter.com/seldo">@seldo</a></small>
+    </footer>
+
 </body>
 </html>
