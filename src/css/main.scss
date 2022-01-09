@@ -1,0 +1,198 @@
+@import "../../node_modules/bulma/bulma.sass";
+
+$font-stack: Helvetica, sans-serif;
+$winner-green: rgb(199, 255, 191);
+$second-yellow: rgb(254, 255, 191);
+
+body {
+    font: 100% $font-stack;
+    @extend .has-text-dark;
+}
+
+h1 {
+    @extend .title;
+    @extend .is-2;
+}
+
+h2 {
+    @extend .subtitle;
+    @extend .is-3;
+    text-align: center;
+}
+
+h3 {
+    @extend .title;
+    @extend .is-4;
+}
+
+section {
+    @extend .section;
+}
+
+code {
+    background-color: #eee;
+    color: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: inherit;
+    padding: inherit;
+}
+
+code::before {
+    content: '<';
+}
+code::after {
+    content: '>';
+}
+
+div p {
+    margin-bottom: 1em;
+}
+
+#title b::before {
+    content: '<';
+}
+#title b::after {
+    content: '>';
+}
+
+.taglist {
+    font: 80% monospace;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(50px, 1fr));
+    column-gap: 5px;
+    row-gap: 5px;
+}
+
+.taglist.big {
+    font: 100% monospace;
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    column-gap: 10px;
+    row-gap: 10px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.taglist dl {
+    margin-top: 5px;
+}
+
+.taglist dt {
+    text-transform: uppercase;
+    color: blue;
+    font-size: 80%;
+}
+
+.taglist dd {
+    justify-self: center;
+}
+
+.taglist dd code {
+    background-color: inherit;
+}
+
+.taglist dd.first code {
+    background-color: $winner-green;
+}
+.taglist dd.second code {
+    background-color: $second-yellow;
+}
+
+.taglist input[type=checkbox] {
+    display: none;
+}
+
+.taglist input + label dd .bar {
+    display: none;
+}
+
+.taglist input + label dd data {
+    display: none;
+}
+
+.taglist input:checked + label dd {
+    display: flex;
+    flex-direction: row;
+}
+
+.taglist input:checked + label dd code {
+    display: none;
+}
+
+.taglist input:checked + label dd span {
+    display: block;
+    background-color: #ccc;
+    height: 1em;
+}
+
+.taglist input:checked + label dd.first span {
+    background-color: $winner-green;
+}
+
+.taglist input:checked + label dd.second span {
+    background-color: $second-yellow;
+}
+
+.taglist input:checked + label dd data {
+    display: block;
+    float: left;
+    padding-left: 2px;
+}
+.taglist input:checked + label dd data::after {
+    content: '%'
+}
+
+.final4 code {
+    display: inline-block;
+}
+
+.final4 .first code {
+    background-color: $winner-green;
+    width: 82%;
+}
+.final4 .second code {
+    background-color: $winner-green;
+    width: 52%;
+}
+.final4 .third code {
+    width: 40%;
+}
+.final4 .fourth code {
+    width: 26%;
+}
+
+.championship code {
+    display: inline-block;
+}
+
+.championship .first code {
+    background-color: $winner-green;
+    width: 78%;
+}
+.championship .second code {
+    background-color: $second-yellow;
+    width: 29%;
+}
+
+@include tablet {
+    .taglist {
+        grid-template-columns: repeat(8, minmax(100px, 1fr));
+    }
+}
+
+hr {
+    margin-top: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+    width: 1em;
+    font-weight: bold;
+    font-size: 200%;
+    background-color: transparent;
+    transform: rotate(90deg);
+    color: #000;
+}
+
+hr::after {
+    content: '>';
+}

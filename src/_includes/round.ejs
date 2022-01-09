@@ -1,0 +1,27 @@
+<div class="taglist <%= size %>">
+    <% for(let game of scores[round]) { %>
+        <input type="checkbox" id="round<%= round %>game<%= game.game %>">
+        <label for="round<%= round %>game<%= game.game %>">
+            <dl class="match">
+                <dt>Game <%= game.game %></dt>
+                <% for(let i = 0; i < game.tags.length; i++) { 
+                    let tag = game.tags[i]
+                    let placeClass = '';
+                    console.log(game.tags)
+                    switch(i) {
+                        case 0: placeClass = "first"; break;
+                        case 1: placeClass = "second"; break;
+                        case 2: placeClass = "third"; break;
+                        case 3: placeClass = "fourth"; break;
+                    }
+                    %>
+                    <dd class="<%= placeClass %>">
+                        <code><%= tag.tag %></code>
+                        <span style="width: <%= tag.score %>%"></span>
+                        <data><%= tag.score %></data>
+                    </dd>
+                <% } %>
+            </dl>
+        </label>
+    <% } %>
+</div>
