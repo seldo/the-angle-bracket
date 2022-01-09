@@ -13,6 +13,7 @@
     "bulma": "^0.9.3",
     "csv-parse": "^5.0.4",
     "eleventy-plugin-sass": "^1.2.0",
-    "esbuild": "^0.14.1"
+    "esbuild": "^0.14.1",
+    "sass": "^1.47.0"
   }
 }
