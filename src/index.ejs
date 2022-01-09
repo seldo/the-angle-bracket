@@ -31,9 +31,9 @@
         <div class="commentary">
             <h2>Round 1 exits</h2>
 
-            <p>As you'd expect from a completely randomized tag set, there were some real surprises in this round, but there are also a lot of tags of dubious value and they mostly exited in round 1.</p>
+            <p>As you'd expect from a completely randomized tag set, there were some real surprises in this round, but there are also a lot of tags of dubious value and they mostly exited in round 1. I've grouped the results into the categories defined for each tag in the spec.</p>
 
-            <p>Click or tap any tag for details.</p>
+            <p>Because there are so many tags in round 1, per-tag commentary is hidden; you can click or tap any tag to see it.</p>
 
             <h3>Block tags: 50% eliminated</h3>
             <p>Some old favorites drew tough games and were eliminated early; <code>dt</code> was robbed, robbed I say.</p>
@@ -54,6 +54,281 @@
                     <details>
                         <summary><code>hr</code></summary>
                         <p>Originally meant Horizontal Rule, but since that's not even slightly semantic it now means <dfn>thematic break</dfn> which is a phrase that I suppose has an h and an r in it somewhere.</p>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary><code>ol</code></summary>
+                        <p>A really tough break to be put up against <code>header</code> and <code>table</code> in game 12. <code>ul</code> was much luckier and dominated game 21.</p>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary><code>pre</code></summary>
+                        <p>A cruel rejection of a fairthful workhorse. <code>pre</code> isn't semantic but it's <strong>useful</strong>, dammit.</p>
+                    </details>
+                </li>
+            </ul>
+
+            <h3>Embeds: 70% eliminated</h3>
+            <p>It was a brutal first round for embeds of all kinds; they were the second most-eliminated category of tags.</p>
+            
+            <ul>
+                <li>
+                    <details>
+                        <summary><code>embed</code></summary>
+                        <p><code>embed</code> is how Netscape brought in content that was delivered by plug-ins. Nobody uses Netscape anymore, but more surprising is that the entire concept of plugins has essentially vanished. The final holdout, Flash, was <a href="https://en.wikipedia.org/wiki/Adobe_Flash#End_of_life">end of lifed in January 2021</a>.</p>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary><code>iframe</code></summary>
+                        <p>This was a shocking result given <code>iframe</code>'s ubiquity across the web, losing to <code>head</code> and <code>main</code> in game 5. <code>head</code> is obviously a strong tag, but <code>main</code>? Despite its ubiquity, devs don't love <code>iframe</code>.</p>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary><code>object</code> & <code>param</code></summary>
+                        <p><code>object</code> works like <code>embed</code> except it wasn't written in a hurry in the middle of the night by an overcaffeinated nerd at Netscape. It is similarly unhelpful in the modern, mostly plugin-free web, although people do use it to embed PDFs.</p>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary><code>video</code>, <code>source</code> & <code>track</code></summary>
+                        <p>The Netflix tags! They include a passing glance at accessibility in the <code>track</code> tag which is routinely ignored.</p>
+                    </details>
+                </li>
+            </ul>
+
+            <h3>Forms: 42% eliminated</h3>
+
+            <p>In a pattern we're going to see repeated several times, all the newer, accessibility-minded stuff got kicked out early. You bastards.</p>
+
+            <ul>
+                <li>
+                    <details>
+                        <summary><code>datalist</code></summary>
+                        <p>A select with built-in autocomplete! This is so good! But it was up against <code>meta</code> and <code>blockquote</code> in game 15, tough to beat.</p>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary><code>meter</code></summary>
+                        <p>It... shows a little gauge. Honestly, not crying any tears about losing this mysterious little tag.</p>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary><code>optgroup</code></summary>
+                        <p>Who is grouping options in dropdowns? Nobody, that's who.</p>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary><code>output</code></summary>
+                        <p>This is supposed to make sections of your page that change as a result of user input more accessible by making them aria-live but there are some questions as to how useful that really is.</p>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary><code>progress</code></summary>
+                        <p>It's like <code>meter</code> but it's expected to move and... why do we have this?</p>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary><code>textarea</code></summary>
+                        <p>How DARE you. One of the foundational tags of web apps, cruelly discarded. But it was up against <code>p</code> and <code>html</code> in game 11 so it had no chance.</p>
+                    </details>
+                </li>
+            </ul>
+
+            <h3>Metadata: 30% eliminated</h3>
+
+            <p>With only a third of the tags in this category eliminated, it was one of the strongest early categories, although it included early warning signs for CSS fans.</p>
+
+            <ul>
+                <li>
+                    <details>
+                        <summary><code>base</code></summary>
+                        <p>Yeah, okay, it's useful to be able to set the base href, but we can all agree it's pretty niche.</p>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary><code>link</code></summary>
+                        <p>A highly controversial result in game 1, round 1! <code>nav</code> and <code>section</code>, semantic but hardly fundamental, beat <code>link</code>, the core tag for (amongst other things) pulling in CSS. As we're going to see, CSS had a rough time in this tournament.</p>
+                    </details>
+                </li>
+            </ul>
+
+            <h3>Scripting: 40% eliminated</h3>
+
+            <p>There aren't a lot of scripting tags to begin with, and it turns out only one we really care about.</p>
+
+            <ul>
+                <li>
+                    <details>
+                        <summary><code>slot</code> & <code>template</code></summary>
+                        <p>Powerful as they are, not a lot of people are authoring web components right now, so it was unsurprising to see these exit early.</p>
+                    </details>
+                </li>
+            </ul>
+
+            <h3>Sections: 20% eliminated</h3>
+
+            <p>This was the strongest category in round 1, with passionate fans and a bunch of surprisingly close games.</p>
+
+            <ul>
+                <li>
+                    <details>
+                        <summary><code>article</code></summary>
+                        <p>Highly useful in a semantic sense but also confusingly similar to <code>section</code> in practice, <code>article</code> also drew a brutal first game against <code>a</code> and <code>img</code>, and there's no coming back from that.</p>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary><code>h3</code> & <code>h4</code></summary>
+                        <p>In <a href="https://www.advancedwebranking.com/seo/html-study/">real usage data</a> <code>h3</code> and <code>h4</code> are far more popular than <code>h5</code> and <code>h6</code>, which both survived to round 2, so I'm going to say they were unlucky victims of the entirely random seeding of the first round.</p>
+                    </details>
+                </li>
+            </ul>
+
+            <h3>Tables: 66% eliminated</h3>
+
+            <p>I feel like maybe the backlash against table layouts was learned too well; tables are nifty data structures and it was cruel to eviscerate the category in round 1.</p>
+
+            <ul>
+                <li>
+                    <details>
+                        <summary><code>col</code> & <code>colgroup</code></summary>
+                        <p>I'll be honest, I didn't know these tags existed until I read the spec. They're certainly nifty semantically, and to make styling columns possible, but they're hardly core to the table experience. They don't even hold data!</p>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary><code>tfoot</code> & <code>thead</code></summary>
+                        <p>Be honest, when was the last time you defined a footer for a table? Headers are a lot more useful but, still, hardly essential.</p>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary><code>td</code> & <code>tr</code></summary>
+                        <p>Unlike the other four eliminated in this round, these <strong>are</strong> the very core of the table experience! Game 23 was controversial, with <code>li</code> and <code>pre</code> beating the arguably more useful <code>td</code> (and even more surprisingly, <code>span</code>). <code>tr</code>'s loss in game 23 made more sense as it was up against heavyweights <code>script</code> and <code>title</code>.</p>
+                    </details>
+                </li>
+            </ul>
+
+            <h3>Text: 73% eliminated</h3>
+
+            <p>The most-eliminated tag category, round 1 saw the immediate exit of a huge number of marginally useful semantic tags, and also some big surprises.</p>
+
+            <ul>
+                <li>
+                    <details>
+                        <summary><code>bdi</code> & <code>bdo</code></summary>
+                        <p>Unless you regularly develop for languages that read right-to-left, you probably haven't used these tags. Internationalization was an early victim of the winnowing process of the tournament.</p>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary><code>data</code></summary>
+                        <p>The purest of purely semantic tags, it's no surprise to see this exit early.</p>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary><code>dfn</code></summary>
+                        <p>Essentially an inline equivalent of <code>dt</code>, a very niche tag.</p>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary><code>i</code></summary>
+                        <p>Originally for italics, <code>i</code> is one of several early non-semantic tags that have been retconned into a different mean. It's now <dfn>Idiomatic text</dfn>, which we can all agree is some bullshit.</p>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary><code>kbd</code></summary>
+                        <p>The distinction between <code>kbd</code> and <code>code</code> is pretty fine, so no wonder this exited early.</p>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary><code>mark</code></summary>
+                        <p>Who uses this, other than search engines? Do they even use it?</p>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary><code>q</code></summary>
+                        <p>The non-block equivalent of <code>blockquote</code>; apparently browsers enclose the text in <q>quotes</q>? Neat. Not very useful.</p>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary><code>ruby</code>, <code>rp</code> & <code>rt</code></summary>
+                        <p>Another victim of our manifest lack of concern for internationalization, all three of the ruby tags exited in round 1. <code>rp</code> takes my prize for being the most hacky solution to a markup problem I've ever seen, existing solely to hide the parentheses you need to include for your text to make sense in browsers that don't understand the <code>ruby</code> tag. <code>rt</code> holds the distinction of having the fewest votes of any tag in round 1, being absolutely crushed by <code>ul</code> in game 21.</p>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary><code>s</code></summary>
+                        <p>The strikethrough element is not really a semantic tag, but it's so useful that it has survived many generations of HTML. Hoever, not useful enough to save it in game 22 against <code>em</code> and <code>dl</code></p>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary><code>samp</code></summary>
+                        <p>I understand why <code>samp</code> and <code>output</code> are different but I am not sure how many authors are really going to care enough to think about that.</p>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary><code>small</code></summary>
+                        <p>Absolutely not a semantic tag, it nevertheless remains useful to be able to define "small print" as actually being small, so this tag has survived in the spec. But not in the tournament.</p>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary><code>sub</code> & <code>sup</code></summary>
+                        <p>Venerable survivors of HTML's academic origins, superscript and subscript aren't really semantic but they're useful as hell. Both drew tough opponents in round 1: <code>sub</code> lost to <code>select</code> and <code>summary</code>, <code>sup</code> to <code>script</code> and <code>title</code>. No dishonor in defeat to such opponents.</p>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary><code>u</code></summary>
+                        <p>Previously the underline element, an entirely non-semantic but ancient tag, <code>u</code> is now technically the <dfn>Unarticulated Annotation</dfn> element which, surprise, usually renders as an underline without upsetting semantic purists.</p>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary><code>var</code></summary>
+                        <p>An obscure tag with academic origins, nearly useless except to mathematicians, <code>var</code> scored the second lowest of any tag in round one. Only the deeply unloved <code>rt</code> scored lower.</p>
+                    </details>
+                </li>
+            </ul>
+
+            <h3>Random other tags</h3>
+
+            <ul>
+                <li>
+                    <details>
+                        <summary><code>del</code> & <code>ins</code></summary>
+                        <p>Who the fuck is using these anyway, Google Docs?</p>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary><code>summary</code></summary>
+                        <p>Although <code>summary</code> didn't make it, its (still useful) parent <code>details</code> survived! A lovely little combo, you are reading content in a summary/details element pair right this second. It was also a close game: <code>summary</code> lost to <code>option</code> by just 0.1%.</p>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary><code>map</code></summary>
+                        <p>The oldest of old school, the image map, cruelly cut down. Its child <code>area</code> survived, but mostly as a result of being in an extremely weak game 14.</p>
                     </details>
                 </li>
             </ul>

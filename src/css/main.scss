@@ -21,7 +21,7 @@ h2 {
 }
 
 h3 {
-    @extend .title;
+    @extend .subtitle;
     @extend .is-4;
 }
 
@@ -140,6 +140,10 @@ div p {
 }
 .taglist input:checked + label dd data::after {
     content: '%'
+}
+
+.commentary ul {
+    margin-bottom: 1em;
 }
 
 .final4 code {
