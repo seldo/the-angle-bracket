@@ -7,6 +7,7 @@ $second-yellow: rgb(254, 255, 191);
 $border-blue: #2051FF;
 $body-black: #363636;
 $body-red: #E02828;
+$grid-border: #D1D1D1;
 
 body {
     font: 100% $font-stack;
@@ -88,11 +89,11 @@ h2 span::after {
 }
 
 h2 a::after {
-    content: '⇥ TWITTER';
+    content: '▶ TWITTER';
     font-size: 45%;
     text-align: right;
     float: right;
-    margin-top: 10px;
+    margin-top: 12px;
 }
 
 code {
@@ -129,30 +130,50 @@ div p {
 }
 
 .taglist {
-    font: 80% monospace;
+    font-size: 70%;
     display: grid;
-    grid-template-columns: repeat(4, minmax(50px, 1fr));
-    column-gap: 5px;
-    row-gap: 5px;
+    grid-template-columns: repeat(3, minmax(50px, 1fr));
+    grid-gap: 0px;
 }
 
 .taglist.big {
-    font: 100% monospace;
+    font: 100%;
     grid-template-columns: repeat(2, minmax(100px, 1fr));
-    column-gap: 10px;
-    row-gap: 10px;
     margin-left: 15%;
     margin-right: 15%;
 }
 
 .taglist dl {
-    margin-top: 5px;
+    border: solid $grid-border;
+    border-width: 0px 1px 1px 1px;
+    padding: 2px 6px 6px 6px;
+}
+.taglist label:nth-child(2) dl {
+    border-top-width: 1px;
+}
+.taglist label:nth-child(4) dl {
+    border-top-width: 1px;
+}
+.taglist label:nth-child(6) dl {
+    border-top-width: 1px;
+}
+.taglist label:nth-child(3n) dl {
+    border-left: 0px;
+}
+.taglist label:nth-child(3n+1) dl {
+    border-left: 0px;
 }
 
 .taglist dt {
     text-transform: uppercase;
-    color: blue;
-    font-size: 80%;
+    color: $body-black;
+    font-size: 90%;
+    font-weight: 600;
+}
+.taglist dt::after {
+    content: '%';
+    text-decoration: underline;
+    float: right;
 }
 
 .taglist dd {
@@ -160,10 +181,16 @@ div p {
 }
 
 .taglist dd code {
+    color: $body-black;
     background-color: inherit;
 }
 
 .taglist dd.first code {
+    background-color: $winner-green;
+    padding: 1px 2px;
+}
+.taglist dd.first code::after {
+    content: '>⭐️';
     background-color: $winner-green;
 }
 .taglist dd.second code {
@@ -194,7 +221,9 @@ div p {
 .taglist input:checked + label dd span {
     display: block;
     background-color: #ccc;
-    height: 1em;
+    height: 12px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
 }
 
 .taglist input:checked + label dd.first span {
@@ -208,14 +237,36 @@ div p {
 .taglist input:checked + label dd data {
     display: block;
     float: left;
+    padding: 0px;
     padding-left: 2px;
+    font-size: 90%;
 }
 .taglist input:checked + label dd data::after {
     content: '%'
 }
 
+.commentary h2 {
+    margin-top: 1em;
+    font-size: 140%;
+}
+
+.commentary h2::before {
+    font-family: monospace;
+    content: '<!-- ';
+}
+.commentary h2::after {
+    font-family: monospace;
+    content: ' -->';
+}
+
 .commentary ul {
     margin-bottom: 1.5em;
+}
+.commentary h3 {
+    border-style: dashed;
+    border-width: 1px 0px 0px 0px;
+    padding-top: 1em;
+    font-size: 115%;
 }
 .commentary h3:not(:last-child) {
     margin-bottom: 0.5em;
