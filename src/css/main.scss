@@ -1,23 +1,64 @@
 @import "../../node_modules/bulma/bulma.sass";
 
-$font-stack: Helvetica, sans-serif;
+$title-fonts: 'Fira Code', monospace;
+$font-stack: 'Libre Franklin', sans-serif;
 $winner-green: rgb(199, 255, 191);
 $second-yellow: rgb(254, 255, 191);
+$border-blue: #2051FF;
+$body-black: #363636;
+$body-red: #E02828;
 
 body {
     font: 100% $font-stack;
-    @extend .has-text-dark;
+    color: $body-black;
+    line-height: 140%;
+}
+
+.introduction {
+    padding: 36px 0px 32px 0px;
+    border: solid $border-blue;
+    border-width: 16px 12px 24px 12px;
+}
+.introduction h1 {
+    padding: 0px 32px 0px 32px;
+}
+.introduction h2 {
+    border-top: 4px solid $border-blue;
+    border-bottom: 4px solid $border-blue;
+    width: 100%;
+    font-size: 22px;
+    padding: 12px 8px 12px 8px;
+}
+.introduction div {
+    padding: 0px 16px 0px 16px;
+}
+.introduction div p {
+    margin-bottom: 0px;
+}
+.instructions {
+    padding-top: 1.5em;
+    color: $body-red;
+}
+.instructions p:not(:last-child) {
+    margin-bottom: 1em;
+}
+
+h1, h2, h3 {
+    font-family: $title-fonts;
 }
 
 h1 {
-    @extend .title;
-    @extend .is-2;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 55px;
+    margin-top: -20px;
+    margin-bottom: 20px;
 }
 
 h2 {
     @extend .subtitle;
     @extend .is-3;
-    text-align: center;
+    width: 100%;
 }
 
 h3 {
@@ -29,11 +70,34 @@ section {
     @extend .section;
     @extend .container;
     max-width: 40em;
+    padding-top: 1em;
+}
+
+h2 a {
+    display: block;
+    width: 100%;
+}
+h2 span {
+    color: $body-black;
+}
+h2 span::before {
+    content: '<';
+}
+h2 span::after {
+    content: '>';
+}
+
+h2 a::after {
+    content: '⇥ TWITTER';
+    font-size: 45%;
+    text-align: right;
+    float: right;
+    margin-top: 10px;
 }
 
 code {
-    background-color: #eee;
-    color: inherit;
+    background-color: inherit;
+    color: $body-red;
     font-size: inherit;
     line-height: inherit;
     font-weight: inherit;

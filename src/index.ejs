@@ -4,29 +4,36 @@
     <title>The Angle Bracket</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="/css/main.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&family=Libre+Franklin:wght@500&display=swap" rel="stylesheet"> 
 </head>
 
 <body>    
-    <section>
+    <section class="introduction">
         <h1 id="title">The <b>Angle</b> Bracket</h1>
+        <h2>A tournament of HTML tags</h2>
 
         <div>
             <p>The Angle Bracket was a tournament of HTML tags, conducted via 57 Twitter polls in 7 rounds, conducted over a week. Apart from the final, each round consisted of games of 4 tags (because Twitter polls can only have 4 options) in which the first and second place finishers made it to the next round.</p>
-    
-            <p>In a proper bracket competition everybody is seeded evenly across the competition by how likely they are to win, and you can draw a cute little tree structure as players are eliminated. Unfortunately I didn't think of this in advance, and also I had no idea which tags would or wouldn't be popular, so every round I randomized the winners of the previous round into new games. So you can't draw a tree. I'm sorry. Next time.</p>
-    
-            <p>Scroll down to read the story of the tournament as it unfolded. You can click or tap any game to see the exact scores.</p>
+            </p>
         </div>
+    </section>
+
+    <section class="instructions">
+        <p>In a proper bracket competition everybody is seeded evenly across the competition by how likely they are to win, and you can draw a cute little tree structure as players are eliminated. Unfortunately I didn't think of this in advance, and also I had no idea which tags would or wouldn't be popular, so every round I randomized the winners of the previous round into new games. So you can't draw a tree. I'm sorry. Next time.</p>
     
+        <p>Scroll down to read the story of the tournament as it unfolded. You can click or tap any game to see the exact scores.
+    </section>
+    
+    <section>
         <div class="tournament-round">
-            <h2><a href="https://twitter.com/seldo/status/1459959521896382466" target="_blank">Round 1</a></h2>
+            <h2><a href="https://twitter.com/seldo/status/1459959521896382466" target="_blank"><span>Round 1</span></a></h2>
 
             <p>This was the wild west round; every tag from the <a href="https://html.spec.whatwg.org/">HTML 5 spec</a> (uhhhh except <code>caption</code> because I accidentally left it out).</p>
 
             <%- include('_includes/round', {scores: scores, round: 1, size: 'small'}); %>
         </div>        
-
-        <hr>
 
         <div class="commentary">
             <h2>Round 1 exits</h2>
