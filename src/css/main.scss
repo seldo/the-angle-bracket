@@ -11,6 +11,12 @@ $grid-border: #D1D1D1;
 $graph-grey: #ddd;
 $open-grey: #EEEEEE;
 
+// Disable the widescreen breakpoint
+$widescreen-enabled: false;
+
+// Disable the fullhd breakpoint
+$fullhd-enabled: false;
+
 body {
     font: 100% $font-stack;
     color: $body-black;
@@ -77,9 +83,15 @@ h3 {
 
 section {
     @extend .section;
-    @extend .container;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 40em;
     padding-top: 1em;
+}
+@include tablet {
+    section.is-max-desktop {
+        max-width: 40em;
+    }
 }
 
 h2 a {
@@ -409,14 +421,6 @@ div p {
 #winner code {
     color: #fff;
 }
-
-/*
-@include tablet {
-    .taglist {
-        grid-template-columns: repeat(8, minmax(100px, 1fr));
-    }
-}
-*/
 
 footer {
     font-family: $title-fonts;
