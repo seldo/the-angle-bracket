@@ -28,13 +28,15 @@ a {
 }
 .introduction h1 {
     padding: 0px 32px 0px 32px;
+    color: $border-blue;
 }
 .introduction h2 {
     border-top: 4px solid $border-blue;
     border-bottom: 4px solid $border-blue;
     width: 100%;
-    font-size: 22px;
-    padding: 12px 8px 12px 8px;
+    font-size: 20px;
+    padding: 12px 8px 12px 36px;
+    color: $border-blue;
 }
 .introduction div {
     padding: 0px 16px 0px 16px;
