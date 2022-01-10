@@ -5,9 +5,11 @@ const sassPluginOptions = {
 }
 
 module.exports = function eleventyConfig(eleventyConfig) {
+  eleventyConfig.addPassthroughCopy('./src/images');
+
   eleventyConfig.addPlugin(pluginSass, sassPluginOptions);
 
-  eleventyConfig.addWatchTarget('./src/js/')
+  // eleventyConfig.addWatchTarget('./src/js/')
 
   return {
     dir: {

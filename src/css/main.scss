@@ -98,12 +98,16 @@ h2 span::after {
 }
 
 h2 a::after {
-    content: '▶ TWITTER';
+    content: 'TWITTER';
     font-size: 45%;
     text-align: right;
     float: right;
+    padding-left: 23px;
     margin-top: 12px;
     text-decoration: underline;
+    background-image: url(/images/icon-link-black.svg);
+    background-repeat: no-repeat;
+    background-position-y: 3px;
 }
 
 code {
@@ -154,6 +158,7 @@ div p {
 }
 
 .taglist dl {
+    height: 100%;
     border: solid $grid-border;
     border-width: 0px 1px 1px 1px;
     padding: 2px 6px 6px 6px;
