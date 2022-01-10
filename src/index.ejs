@@ -28,6 +28,7 @@
     
     <section>
         <div class="tournament-round">
+            <!-- look, I tried REALLY hard to avoid this additional span -->
             <h2><a href="https://twitter.com/seldo/status/1459959521896382466" target="_blank"><span>Round 1</span></a></h2>
 
             <p>This was the wild west round; every tag from the <a href="https://html.spec.whatwg.org/">HTML 5 spec</a> (uhhhh except <code>caption</code> because I accidentally left it out).</p>
@@ -599,7 +600,7 @@
         </div>
 
         <div class="tournament-round">
-            <h2><a href="https://twitter.com/seldo/status/1461066159613042688">Round 4</a></h2>
+            <h2><a href="https://twitter.com/seldo/status/1461066159613042688"><span>Round 4</span></a></h2>
 
             <p>The tags that survived to round 4 showed some clear trends:
                 <ul class="actual-list">
@@ -668,12 +669,12 @@
                         <summary><code>span</code></summary>
                         <p>Not only did <code>span</code> lose to <code>div</code>, it came dead last in game 1. An ignominous fate.</p>
                     </details>
-                <li>
+                </li>
             </ul>
         </div>
 
         <div class="tournament-round">
-            <h2><a href="https://twitter.com/seldo/status/1461428057550430214">Round 5</a></h2>
+            <h2><a href="https://twitter.com/seldo/status/1461428057550430214"><span>Round 5</span></a></h2>
 
             <p>The version of HTML presented by round 5 reveals some uncomfortable truths about ourselves as developers. We threw out accessibility, semantic markup, discoverability, even style sheets. The remaining tags can build a web app -- you've still got <code>canvas</code>, so quite a fancy web app -- sure, but at what cost? And why the fuck is <code>marquee</code> still here?</p>
 
@@ -708,7 +709,7 @@
         </div>
 
         <div class="tournament-round">
-            <h2><a href="https://twitter.com/seldo/status/1461787400070438914">Final 4</a></h2>
+            <h2><a href="https://twitter.com/seldo/status/1461787400070438914"><span>Final 4</span></a></h2>
 
             <p>This version of HTML is a nightmare. To do anything vaguely useful you have to resort to horrible hacks, and of course, because web developers are who we are, that's what people started doing at this point in the competition:
                 <ul class="actual-list">
@@ -720,7 +721,8 @@
 
             <p>The final 4 had been predicted 3 rounds earlier by <a href="https://twitter.com/citizen_of_now/status/1461977081080913924">Howard</a>, and his reward was a donation in his name to <a href="https://codebar.io/">Codebar</a>, which he matched with his own funds, because he's a good sport.</p>
 
-            <dl class="match final4">
+            <dl class="match finals">
+                <dt>Final four</dt>
                 <dd class="first">
                     <code>a</code>
                     <data>41.1%</data>
@@ -760,7 +762,7 @@
         </div>
 
         <div class="tournament-round">
-            <h2><a href="https://twitter.com/seldo/status/1462149025633746951">Championship</a></h2>
+            <h2><a href="https://twitter.com/seldo/status/1462149025633746951"><span>Championship</span></a></h2>
 
             <p>It all came down to a choice, emblamatic of the times we live in.</p>
 
@@ -770,7 +772,8 @@
                 
             <p>Would reality win over memes? It was a very 2021 question.</p>
 
-            <dl class="match championship">
+            <dl class="match finals">
+                <dt>Championship</dt>
                 <dd class="first">
                     <code>a</code>
                     <data>71.3%</data>
@@ -782,8 +785,11 @@
             </dl>
         </div>
         
-        <div class="commentary">
-            <h2>The winner: <code>a</code></h2>
+        <div id="winner">
+            <!-- I'm sorry -->
+            <marquee><h2>The winner</h2></marquee>
+
+            <h2 id="trophy"><code>a</code></h2>
 
             <p>And that was it. After 57 polls, 7 rounds, and over 76,000 votes cast, we had our champion. To my enormous relief, <code>a</code> was our victor. It's just not a web without it.</p>
 
